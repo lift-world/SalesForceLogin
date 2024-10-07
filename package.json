@@ -1,0 +1,21 @@
+{
+	"name": "root",
+	"version": "1.0.0",
+	"private": true,
+	"workspaces": {
+		"packages": [
+			"frontend",
+			"backend"
+		]
+	},
+	"scripts": {
+		"start-frontend": "yarn workspace register-login-nextjs run dev",
+		"start-backend": "yarn workspace test-login start"
+	},
+	"devDependencies": {
+		"lerna": "^8.1.8"
+	},
+	"dependencies": {
+		"root": "file:"
+	}
+}
